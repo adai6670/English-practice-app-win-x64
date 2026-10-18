@@ -1,1 +1,3 @@
-
+google/gemma-4-E2B-it-qat-q4_0-gguf模型，下载 gemma-4-E2B_q4_0-it.gguf 及 gemma-4-E2B_q4_0-it.gguf 文件
+下载地址：https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf
+也可以选择E4B模型，根目录下的llama_start.cmd文件做相应修改
