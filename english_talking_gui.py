@@ -14,7 +14,8 @@ import soundfile as sf
 from faster_whisper import WhisperModel
 
 # ---------------- 配置 ----------------
-STT_MODEL_SIZE = r"models--Systran--faster-whisper-base"
+# 请确认 models/ 下的 Whisper 模型目录名称；如名称不同，请修改此行。
+STT_MODEL_SIZE = r"models/faster-whisper-base"
 # 注意：这里填入你在 llama-server 中加载的模型名称（或者简单的 "gemma"）
 LLM_MODEL = "gemma-4"
 # 修改为你的 llama-server 地址（默认通常是 8080 端口）
@@ -331,7 +332,7 @@ class EnglishTalkingApp:
         if not command or all(line.strip().startswith("#") or not line.strip() for line in command.splitlines()):
             command = tk.simpledialog.askstring(
                 "启动 llama-server",
-                "请输入完整启动命令（例如 cd /d 路径 && llama-server.exe ...）：",
+                "请输入完整启动命令（例如 llama_start.cmd）：",
                 parent=self.root,
             )
         if not command or not command.strip():
