@@ -1,2 +1,0 @@
-配置环境
-python -m pip install faster-whisper edge-tts requests sounddevice soundfile pygame numpy
